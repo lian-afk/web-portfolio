@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="css/budget.css">
+        <title>MultiServices - Orçamento</title>
+        <link rel="icon" href="img/index/iconmultiservices.png">
+    </head>
+    <body>
+        <header>
+            <section id="conteudoheader">
+                <h1>Faça seu Orçamento</h1>
+                <h4>Aqui você poderá fazer um orçamento dos serviços que queira contratar da MultiServices.</h4>
+                <p>Cheque os serviços e selecione quais deseja adicionar para contrato.</p>
+            </section>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                    <div id="brand">
+                        <a class="navbar-brand" href="index.html" style="color: #EEDF7A;">MultiServices</a>
+                    </div> 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alteração Nav">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#about">Sobre Nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Serviços</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hiring.html">Trabalhe Conosco</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="budget.html">Orçamento</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section id="services" class="row">
+            <h1>Nossos Serviços:</h1>
+            <div class="card col-sm-4">
+                <img src="img/budget/limpeza.jpeg" class="card-img-top" alt="limpeza">
+                <div class="card-header"><h2>Limpeza</h2></div>
+                <p class="card-text">É essencial para manter o bem-estar e a organização dos espaços diariamente em todas as empresas. Por isso, oferecemos os melhores serviços de limpeza para vocês.</p>
+                <div class="card-footer mt-auto">
+                    Escolha a função:
+                    <select id="funlimpeza" class="form-select">
+                        <option value="zeladores">Zeladores</option>
+                        <option value="faxineiros">Faxineiros</option>
+                        <option value="garçons">Garçons</option>
+                    </select>
+                </div>
+                <button class="btn btn-warning submit">Adicionar ao Orçamento</button>
+            </div>
+            <div class="card col-sm-4">
+                <img src="img/budget/lorax.jpeg" class="card-img-top" alt="lorax">
+                <div class="card-header"><h2>Frete</h2></div>
+                <p class="card-text">Profissionais que fazem a preparação, triagem e coleta de mercadorias e transporte de pessoas para seu destino.</p>
+                <div class="card-footer mt-auto">
+                    Escolha a função:
+                    <select id="funfrete" class="form-select">
+                        <option value="longadist">Carga de Longa Distância</option>
+                        <option value="altoval">Carga de Alto Valor</option>
+                        <option value="cargafragil">Carga Frágil</option>
+                    </select>
+                </div>
+                <button class="btn btn-warning submit">Adicionar ao Orçamento</button>
+            </div>
+            <div class="card col-sm-4">
+                <img src="img/budget/blart.jpeg" class="card-img-top" alt="blart">
+                <div class="card-header"><h2>Segurança</h2></div>
+                <p class="card-text">Destinados a proteger pessoas, informações no campo cibernético e bens públicos e privados.</p>
+                <div class="card-footer mt-auto">
+                    Escolha a função:
+                    <select id="funseguranca" class="form-select">
+                        <option value="segparticular">Segurança Particular</option>
+                        <option value="vigpatrimonial">Vigilância Patrimonial</option>
+                        <option value="agescolta">Agentes de Escolta</option>
+                    </select>
+                </div>
+                <button class="btn btn-warning submit">Adicionar ao Orçamento</button>
+            </div>
+            <div class="card col-sm-4">
+                <img src="img/budget/bmo.jpeg" class="card-img-top" alt="bmo">
+                <div class="card-header"><h2>Informática</h2></div>
+                <p class="card-text">Disponibilizamos equipes que fazem desde a instalação de equipamentos até projetos de desenvolvimento.</p>
+                <div class="card-footer mt-auto">
+                    Escolha a função:
+                    <select id="funinformatica" class="form-select">
+                        <option value="infraestrutura">Montagem de Infraestrutura de Redes</option>
+                        <option value="desenvolvimento">Desenvolvimento de Software</option>
+                        <option value="helpdesk">Suporte Help Desk</option>
+                    </select>
+                </div>
+                <button class="btn btn-warning submit">Adicionar ao Orçamento</button>
+            </div>
+            <div class="card col-sm-4">
+                <img src="img/budget/cookmama.jpeg" class="card-img-top" alt="cookingmama">
+                <div class="card-header"><h2>Alimentos</h2></div>
+                <p class="card-text">Produção e fornecimento de Alimentos e Bebidas para demais setores de negócios.</p>
+                <div class="card-footer mt-auto">
+                    Escolha a função:
+                    <select id="funtreinamento" class="form-select">
+                        <option value="eventos">Serviço de Alimentação em Eventos</option>
+                        <option value="unidade">Unidade de Alimentação e Nutrição</option>
+                        <option value="corporativa">Alimentação Corporativa</option>
+                    </select>
+                </div>
+                <button class="btn btn-warning submit">Adicionar ao Orçamento</button>
+            </div>
+            <div class="card col-sm-4">
+                <img src="img/budget/michaelscott.jpeg" class="card-img-top" alt="michaelscott">
+                <div class="card-header"><h2>Treinamento</h2></div>
+                <p class="card-text">Treinamento de Função para funcionários ainda em processo de aprendizado e experiência.</p>
+                <div class="card-footer mt-auto">
+                    Escolha a função:
+                    <select id="funtreinamento" class="form-select">
+                        <option value="infromatica">Informática Básica para Colaboradores</option>
+                        <option value="pilotagem">Pilotagem em Off-Road Light</option>
+                        <option value="ciberseguranca">Consultoria de Cibersegurança</option>
+                    </select>
+                </div>
+                <button class="btn btn-warning submit">Adicionar ao Orçamento</button>
+            </div>
+        </section>
+        <footer id="foot">
+            <section class="row">
+                <div id="address" class="col-sm-4">
+                    <h3>Onde estamos:</h3>
+                    <h5><i class="fa-solid fa-location-dot"></i> Unidade Matriz:</h5>
+                    <p><strong>Fortaleza-CE</strong></p>
+                    <p>Rua Fictícia, Bairro Inexistente, N°01, 12345-678</p><br>
+                    <h5><i class="fa-solid fa-location-dot"></i> Unidade Distribuidora:</h5>
+                    <p><strong>Eusébio-CE</strong></p>
+                    <p>Rua Icógnita, Bairro Secreto, N°03, 91011-012</p>
+                </div>
+                <div id="contact" class="col-sm-4">
+                    <h3>Fale Conosco:</h3>
+                    <h5>Telefone:</h5>
+                    <p><strong><i class="fa-solid fa-phone"></i> (85)4002-8922</strong></p>
+                    <p><strong><i class="fa-brands fa-whatsapp"></i> (85)5555-6666</strong></p>
+                    <ul><h5>Redes Sociais:</h5>
+                        <li><i class="fa-brands fa-square-instagram"></i> <a href="">Instagram</a></li>
+                        <li><i class="fa-brands fa-square-facebook"></i> <a href="">Facebook</a></li>
+                        <li><i class="fa-brands fa-linkedin"></i> <a href="">LinkedIn</a></li>
+                        <li><i class="fa-solid fa-envelope"></i> multiservices@contato.com</li>
+                    </ul>
+                </div>
+            </section>
+            <p>&copy;MultiServices 2025</p>        
+        </footer>
+        <script src="js/budget.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    </body>
+</html>

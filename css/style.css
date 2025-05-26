@@ -1,0 +1,197 @@
+/*formatação principal*/
+body{
+    background-color: #343131;
+    color: white;
+    padding: 10px;
+}
+section{
+    padding: 60px 30px;
+}
+#about, #clients, #services{
+  background-color: #3f3b3b;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+/*header*/
+.hero-section{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: url('/img/index/multiserviceslogo.png') no-repeat center center;
+    background-size: cover;
+    padding: 2rem;
+}
+.hero-section .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 49, 49, 0.8);
+    z-index: 1;
+}
+.hero-section .content{
+    position: relative;
+    z-index: 2;
+    color: #EEDF7A;
+}
+.hero-section h1{
+    color: #EEDF7A;
+}
+.hero-section p{
+    color: #D8A25E;
+}
+header{
+    height: 100vh;
+    color: white;
+    font-weight: bold;
+}
+header h1{
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+header h3{
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+header nav{
+    background-color: #343131;
+    position: fixed;
+    top: -50px;
+    display: block;
+    transition: top 0.3s;
+}
+header nav a{
+    margin: 0 10px;
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+}
+header nav a:hover{
+    background-color: #A04747;
+    color: #343131;
+    border-radius: 3px;
+}
+.navbar {
+    transition: top 0.4s;
+}
+header nav a:hover{
+    background-color: #A04747;
+    color: #343131;
+    border-radius: 3px
+}
+header#home, #about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;            
+    text-align: center;
+}
+#conteudoheader{
+    position: relative;
+    z-index: 2;
+}
+
+/*about*/
+#clients img{
+    max-width: 9%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+#others{
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+#others img:hover{
+    transform: scale(1.02);
+}
+#client1, #client3{
+    text-align: left;
+}
+#client2{
+    text-align: right;
+}
+
+@media screen and (max-width: 800px){    
+    #clients img{
+        max-width: 95%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    #client1, #client2, #client3{
+        text-align: center;
+    }
+}
+
+/*services*/
+#services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+.card{
+    background-color: #A04747;
+    color: white;
+    margin: 15px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    transition: transform 0.2s ease;
+}
+.card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.card-header{
+    background-color: transparent;
+    border-bottom: 1px solid #D8A25E;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/*footer*/
+#foot{
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+}
+#address{
+    text-align: left;
+}
+footer h3{
+    color: #D8A25E;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #EEDF7A;
+    text-decoration: underline;
+    font-weight: bold;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer li{
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 800px){    
+    #foot{
+        text-align: center;
+    }
+    #address{
+        text-align: center;
+    }
+}

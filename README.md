@@ -2,7 +2,7 @@
 
 ###
 
-<h4 align="center">Here you can see my Web Development projects!<br>-<br>Most part of these projects are websites made for fun or college homework, so<br>have fun looking each of it and interacting.<br>(Some homework websites may be in Portuguese because it's my home language)</h4>
+<h4 align="center">This is a homework made by me and my friend Pedro to present a (not so) professional website. This is only made as a test presentation for our teacher to show him our skills for our grade.<br><br>[THIS WEBSITE IS FULLY IN PORTUGUESE AND STILL IN PROGRESS]<br><br>Main/Hiring Page - ME<br>Budget Page - Pedro (thx Pedro :D)</h4>
 
 ###
 
@@ -13,7 +13,6 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" alt="php logo"  />
 </div>
 
 ###

@@ -1,0 +1,128 @@
+body{
+    background-color: #343131;
+    color: white;
+    padding: 10px;
+}
+section{
+    padding: 60px 30px;
+}
+header, #services{
+  background-color: #3f3b3b;
+  border-radius: 10px;
+  margin: 20px;
+}
+h1, h4{
+    color: #EEDF7A;
+}
+
+
+header{
+    font-weight: bold;
+    padding-top: 70px;
+}
+#conteudoheader{
+    text-align: center;
+}
+#conteudoheader p{
+    color: #D8A25E;
+}
+header nav{
+    background-color: #343131;
+    position: fixed;
+    top: -50px;
+    display: block;
+    transition: top 0.3s;
+}
+header nav a{
+    margin: 0 10px;
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+}
+header nav a:hover{
+    background-color: #A04747;
+    color: #343131;
+    border-radius: 3px;
+}
+.navbar {
+    transition: top 0.4s;
+}
+
+
+#services p{
+    color: #D8A25E;
+}
+#services img{
+    align-self: center;
+    max-width: 70%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+#services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+.card{
+    background-color: #A04747;
+    color: white;
+    margin: 15px;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    transition: transform 0.2s ease;
+    font-weight: bold;
+}
+.card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.card-header{
+    background-color: transparent;
+    border-bottom: 1px solid #D8A25E;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#foot{
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+}
+#address{
+    text-align: left;
+}
+footer h3{
+    color: #D8A25E;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #EEDF7A;
+    text-decoration: underline;
+    font-weight: bold;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+footer li{
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 800px){    
+    #foot{
+        text-align: center;
+    }
+    #address{
+        text-align: center;
+    }
+}
