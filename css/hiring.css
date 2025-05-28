@@ -1,15 +1,14 @@
 body{
     background-color: #343131;
     color: white;
-    padding: 10px;
 }
 section{
-    padding: 60px 30px;
+    padding: 50px 30px;
 }
 #top, #mid, #bottom{
   background-color: #3f3b3b;
   border-radius: 10px;
-  margin: 20px;
+  margin: 10px;
 }
 h1, h4{
     color: #EEDF7A;
@@ -57,7 +56,7 @@ header nav a:hover{
     color: #ca6060;
 }
 #mid img{
-    max-width: 20%;
+    max-width: 25%;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -72,6 +71,12 @@ header nav a:hover{
 /*bottom*/
 #bottom{
     background-color: #A04747;
+}
+#mostrarcandidatura{
+    display: none;
+}
+#dropdownMenuButton{
+    width: 70px;
 }
 
 /*footer*/
@@ -111,4 +116,12 @@ footer li{
     #address{
         text-align: center;
     }
+}
+
+/*modal*/
+.modal-content{
+    background-color: #343131;
+}
+.modal p{
+    color: #D8A25E;
 }

@@ -124,7 +124,6 @@
                     </blockquote>
                 </div>     
             </div>
-            <hr>
 
         </section>
         <section id="bottom">
@@ -137,21 +136,21 @@
 
             <div id="cpf" class="input-group mt-2 mb-2">
                 <span class="input-group-text">CPF:</span>
-                <input type="text" name="cpf" id="cpfinput" class="form-control" placeholder="Insira seu CPF">
+                <input type="text" name="cpf" id="cpfinput" class="form-control" maxlength="14" placeholder="Insira seu CPF">
             </div>
 
             <div id="phone" class="input-group mt-2 mb-2">
-                <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
-                    Localidade
+                <button id="dropdownMenuButton" type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown">
+                    Local
                 </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item">Brasil</a></li>
-                    <li><a class="dropdown-item">EUA</a></li>
-                    <li><a class="dropdown-item">Alemanha</a></li>
-                    <li><a class="dropdown-item">Japão</a></li>
-                    <li><a class="dropdown-item">China</a></li>
+                <ul class="dropdown-menu" id="ddd">
+                    <li><a class="dropdown-item" id="ce">Ceará</a></li>
+                    <li><a class="dropdown-item" id="rj">Rio de Janeiro</a></li>
+                    <li><a class="dropdown-item" id="sp">São paulo</a></li>
+                    <li><a class="dropdown-item" id="pr">Paraná</a></li>
+                    <li><a class="dropdown-item" id="ba">Bahia</a></li>
                 </ul>
-                <input type="text" class="form-control" placeholder="Telefone">
+                <input type="text" class="form-control" maxlength="10" placeholder="Telefone" id="telefoneinput">
             </div>
 
             <div id="email" class="input-group mt-2 mb-2">
@@ -159,9 +158,15 @@
                 <input type="text" name="email" id="emailinput" class="form-control" placeholder="Insira seu E-Mail">
             </div>
 
-            <button class="btn btn-warning">Enviar</button>
+            <button class="btn btn-warning" onclick="checarDados()">Enviar</button>
+            <div id="mostrarcandidatura">
+                <hr>
+                <p id="checagemdados"></p>
+                <span><button class="btn btn-warning" id="btnSim" onclick="envioDadosSim()">Sim</button></span>
+                <button class="btn btn-warning" id="btnNao" onclick="envioDadosNao()">Não</button>
+            </div>
         </section>
-        <hr>
+
         <footer id="foot">
             <section class="row">
                 <div id="address" class="col-sm-4">
@@ -188,6 +193,38 @@
             </section>
             <p>&copy;MultiServices 2025</p>        
         </footer>
+
+        <div class="modal fade" id="modalsim" tabindex="-1" aria-labelledby="modalEnvioLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalEnvioLabel">Candidatura Enviada!</h1>
+                </div>
+                <div class="modal-body">
+                    <p>Seus dados foram enviados! Você agora está no nosso Banco de Talentos.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalnao" tabindex="-1" aria-labelledby="modalCancelamentoLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalCancelamentoLabel">Candidatura Cancelada!</h1>                </div>
+                <div class="modal-body">
+                    <p>Você cancelou o envio dos dados. Caso queira, é permitido tentar enviar novamente.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
         <script src="/js/hiring.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     </body>

@@ -2,15 +2,14 @@
 body{
     background-color: #343131;
     color: white;
-    padding: 10px;
 }
 section{
-    padding: 60px 30px;
+    padding: 50px 30px;
 }
 #about, #clients, #services{
   background-color: #3f3b3b;
   border-radius: 10px;
-  margin: 20px;
+  margin: 10px;
 }
 
 /*header*/
