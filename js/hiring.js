@@ -2,7 +2,7 @@ let lastPosScroll = 0;
 const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', function () {
-    let scrollCima = window.pageYOffset || document.documentElement.scrollCima;
+    let scrollCima = window.pageYOffset || document.documentElement.scrollTop;
     
     if (scrollCima > lastPosScroll) {
     navbar.style.top = "-80px";
@@ -57,9 +57,9 @@ cpfinput.addEventListener('input', function(){
     numcpf = numcpf.substring(0, 11);
     if(numcpf.length > 9){
         numcpf = numcpf.replace(/(\d{3})(\d{3})(\d{3})(\d{1,2})/, "$1.$2.$3-$4");
-    } else if (numcpf.length > 6) {
+    } else if (numcpf.length > 6){
         numcpf = numcpf.replace(/(\d{3})(\d{3})(\d{1,3})/, "$1.$2.$3");
-    } else if (numcpf.length > 3) {
+    } else if (numcpf.length > 3){
         numcpf = numcpf.replace(/(\d{3})(\d{1,3})/, "$1.$2");
     }
     this.value = numcpf;
@@ -78,15 +78,15 @@ telefoneinput.addEventListener('input', function(){
 function validarCampos(){
     const cpfvalidate = document.getElementById('cpfinput').value.replace(/\D/g, '');
     const telefonevalidate = document.getElementById('telefoneinput').value.replace(/\D/g, '');
-    if (cpfvalidate.length < 11){
+    if(cpfvalidate.length < 11){
         alert("CPF deve conter 11 números.");
         return false;
     }
-    if (!ddd){
+    if(!ddd){
         alert("Selecione o local para definir o DDD.");
         return false;
     }
-    if (telefonevalidate.length < 9){
+    if(telefonevalidate.length < 9){
         alert("Telefone deve conter 9 números.");
         return false;
     }
@@ -117,14 +117,14 @@ function checarDados(){
         p.innerHTML = dados;
 }
 
-function envioDadosSim() {
+function envioDadosSim(){
     const modalsim = new bootstrap.Modal(document.getElementById('modalsim'));
     modalsim.show();
     limparFormulario();
     document.getElementById('mostrarcandidatura').style.display = 'none';
 }
 
-function envioDadosNao() {
+function envioDadosNao(){
     const modalnao = new bootstrap.Modal(document.getElementById('modalnao'));
     modalnao.show();
     document.getElementById('mostrarcandidatura').style.display = 'none';

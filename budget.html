@@ -42,6 +42,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="budget.html">Orçamento</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#carrinhonav">
+                                    Carrinho<span class="badge bg-warning text-dark" id="contadoritens">0</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -61,7 +66,7 @@
                         <option value="garçons">Garçons</option>
                     </select>
                 </div>
-                <button class="btn btn-warning submit">Adicionar ao Orçamento</button>
+                <button class="btn btn-warning submit" onclick="adicionarOrcamento('funlimpeza', 'Limpeza')">Adicionar ao Orçamento</button>
             </div>
             <div class="card col-sm-4">
                 <img src="img/budget/lorax.jpeg" class="card-img-top" alt="lorax">
@@ -75,7 +80,7 @@
                         <option value="cargafragil">Carga Frágil</option>
                     </select>
                 </div>
-                <button class="btn btn-warning submit">Adicionar ao Orçamento</button>
+                <button class="btn btn-warning submit" onclick="adicionarOrcamento('funfrete', 'Frete')">Adicionar ao Orçamento</button>
             </div>
             <div class="card col-sm-4">
                 <img src="img/budget/blart.jpeg" class="card-img-top" alt="blart">
@@ -89,7 +94,7 @@
                         <option value="agescolta">Agentes de Escolta</option>
                     </select>
                 </div>
-                <button class="btn btn-warning submit">Adicionar ao Orçamento</button>
+                <button class="btn btn-warning submit" onclick="adicionarOrcamento('funseguranca', 'Segurança')">Adicionar ao Orçamento</button>
             </div>
             <div class="card col-sm-4">
                 <img src="img/budget/bmo.jpeg" class="card-img-top" alt="bmo">
@@ -103,7 +108,7 @@
                         <option value="helpdesk">Suporte Help Desk</option>
                     </select>
                 </div>
-                <button class="btn btn-warning submit">Adicionar ao Orçamento</button>
+                <button class="btn btn-warning submit" onclick="adicionarOrcamento('funinformatica', 'Informática')">Adicionar ao Orçamento</button>
             </div>
             <div class="card col-sm-4">
                 <img src="img/budget/cookmama.jpeg" class="card-img-top" alt="cookingmama">
@@ -111,13 +116,13 @@
                 <p class="card-text">Produção e fornecimento de Alimentos e Bebidas para demais setores de negócios.</p>
                 <div class="card-footer mt-auto">
                     Escolha a função:
-                    <select id="funtreinamento" class="form-select">
+                    <select id="funalimentacao" class="form-select">
                         <option value="eventos">Serviço de Alimentação em Eventos</option>
                         <option value="unidade">Unidade de Alimentação e Nutrição</option>
                         <option value="corporativa">Alimentação Corporativa</option>
                     </select>
                 </div>
-                <button class="btn btn-warning submit">Adicionar ao Orçamento</button>
+                <button class="btn btn-warning submit" onclick="adicionarOrcamento('funalimentacao', 'Alimentação')">Adicionar ao Orçamento</button>
             </div>
             <div class="card col-sm-4">
                 <img src="img/budget/michaelscott.jpeg" class="card-img-top" alt="michaelscott">
@@ -126,12 +131,12 @@
                 <div class="card-footer mt-auto">
                     Escolha a função:
                     <select id="funtreinamento" class="form-select">
-                        <option value="infromatica">Informática Básica para Colaboradores</option>
+                        <option value="informatica">Informática Básica para Colaboradores</option>
                         <option value="pilotagem">Pilotagem em Off-Road Light</option>
                         <option value="ciberseguranca">Consultoria de Cibersegurança</option>
                     </select>
                 </div>
-                <button class="btn btn-warning submit">Adicionar ao Orçamento</button>
+                <button class="btn btn-warning submit" onclick="adicionarOrcamento('funtreinamento', 'Treinamento')">Adicionar ao Orçamento</button>
             </div>
         </section>
         <footer id="foot">
@@ -160,6 +165,23 @@
             </section>
             <p>&copy;MultiServices 2025</p>        
         </footer>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="carrinhonav">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title"><i class="fa-solid fa-cart-shopping"></i>Seu Orçamento:</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div id="itenscarrinho">
+                    <p>Nenhum produto selecionado</p>
+                </div>
+                <div id="checkoutbtn" style="display: none;">
+                    <a class="btn btn-success w-100" onclick="checkoutCarrinho()">Finalizar Orçamento</a>
+                </div>
+                <button class="btn btn-danger mt-3 w-100" id="btnlimpar" style="display: none;" onclick="limparOrcamento()">Limpar</button>
+            </div>
+        </div>
+
         <script src="js/budget.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     </body>

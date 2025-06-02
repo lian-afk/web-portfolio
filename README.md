@@ -2,7 +2,7 @@
 
 ###
 
-<h4 align="center">This is a homework made by me and my friend Pedro to present a (not so) professional website. This is only made as a test presentation for our teacher to show him our skills for our grade.<br><br>[THIS WEBSITE IS FULLY IN PORTUGUESE AND STILL IN PROGRESS]<br><br>Main/Hiring Page - ME<br>Budget Page - Pedro (thx Pedro :D)</h4>
+<h4 align="center">This is a homework made by me and my friend Pedro to present a (not so) professional website. This is only made as a test presentation for our teacher to show him our skills for our grade.<br><br>[THIS WEBSITE IS FULLY IN PORTUGUESE AND STILL IN PROGRESS]<br><br>Main/Hiring Page - ME<br>Budget Page - Me and Pedro (thx Pedro :D)</h4>
 
 ###
 

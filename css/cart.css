@@ -5,7 +5,7 @@ body{
 section{
     padding: 50px 30px;
 }
-header, #services{
+header, #listacheckout{
   background-color: #3f3b3b;
   border-radius: 10px;
   margin: 8px;
@@ -13,17 +13,11 @@ header, #services{
 h1, h4{
     color: #EEDF7A;
 }
-
 /*header*/
 header{
     font-weight: bold;
     padding-top: 70px;
-}
-#conteudoheader{
     text-align: center;
-}
-#conteudoheader p{
-    color: #D8A25E;
 }
 header nav{
     background-color: #343131;
@@ -49,45 +43,29 @@ header nav a:hover{
 .navbar {
     transition: top 0.4s;
 }
-
-/*services*/
-#services p{
+header nav a:hover{
+    background-color: #A04747;
+    color: #343131;
+    border-radius: 3px
+}
+header#home, #about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;            
+    text-align: center;
+}
+#conteudoheader{
+    position: relative;
+    z-index: 2;
+}
+/*modal*/
+.modal-content{
+    background-color: #343131;
+}
+.modal p{
     color: #D8A25E;
 }
-#services img{
-    align-self: center;
-    max-width: 70%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-#services{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    gap: 1rem;
-}
-.card{
-    background-color: #A04747;
-    color: white;
-    margin: 15px;
-    border: none;
-    border-radius: 15px;
-    padding: 10px;
-    transition: transform 0.2s ease;
-    font-weight: bold;
-}
-.card:hover{
-    transform: scale(1.02);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-.card-header{
-    background-color: transparent;
-    border-bottom: 1px solid #D8A25E;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-}
-
 /*footer*/
 #foot{
     color: white;
@@ -125,33 +103,4 @@ footer li{
     #address{
         text-align: center;
     }
-}
-
-/*carrinho*/
-.offcanvas{
-    background-color: #343131;
-}
-.offcanvas p{
-    color: #D8A25E;
-}
-.offcanvas-body{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-#itenscarrinho{
-    flex: 1;
-    overflow-y: auto;
-}
-#checkoutbtn{
-    width: 100%;
-    background-color: #343131;
-    padding: 12px;
-}
-#checkoutbtn a{
-    width: 100%;
-    display: block;
-}
-button.btn-danger{
-    margin-top: 10px;
 }
